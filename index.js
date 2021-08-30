@@ -12,7 +12,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
   cors: {
-    origin: "https://gallant-snyder-c618fb.netlify.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
